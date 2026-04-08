@@ -432,6 +432,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Seizure-Sense-Watch-App-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Seizure Sense Watch App";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We utilize your health records to detect possible seizure activity.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We utilize your heart rate to detect possible seizure activity.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We utilize your Health App to detect possible seizure activity.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -469,6 +470,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Seizure-Sense-Watch-App-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Seizure Sense Watch App";
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "We utilize your health records to detect possible seizure activity.";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We utilize your heart rate to detect possible seizure activity.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We utilize your Health App to detect possible seizure activity.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
