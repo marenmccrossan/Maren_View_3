@@ -7,10 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992ABC7E2F91884D009BAB71 /* Seizure Sense.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 992ABC7D2F91884D009BAB71 /* Seizure Sense.xctestplan */; };
+		992ABCAC2F919E82009BAB71 /* Seizure Sense Watch.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 992ABCAA2F919E77009BAB71 /* Seizure Sense Watch.xctestplan */; };
 		998EC05F2F86AD370073D362 /* Seizure Sense Watch App Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 998EC0552F86AD360073D362 /* Seizure Sense Watch App Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		992ABC6E2F91879D009BAB71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998EBFF02F86A7500073D362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998EC0092F86A77F0073D362;
+			remoteInfo = "Seizure Sense";
+		};
+		992ABC8B2F9190BF009BAB71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998EBFF02F86A7500073D362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998EC0092F86A77F0073D362;
+			remoteInfo = "Seizure Sense";
+		};
+		992ABCA12F919E1A009BAB71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 998EBFF02F86A7500073D362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 998EC0542F86AD360073D362;
+			remoteInfo = "Seizure Sense Watch App Watch App";
+		};
 		998EC05D2F86AD370073D362 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 998EBFF02F86A7500073D362 /* Project object */;
@@ -35,15 +58,59 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		992ABC6A2F91879D009BAB71 /* Seizure Sense Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seizure Sense Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		992ABC7D2F91884D009BAB71 /* Seizure Sense.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Seizure Sense.xctestplan"; sourceTree = "<group>"; };
+		992ABC852F9190BF009BAB71 /* Seizure Sense UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seizure Sense UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		992ABC9D2F919E1A009BAB71 /* Seizure Sense Watch Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seizure Sense Watch Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		992ABCAA2F919E77009BAB71 /* Seizure Sense Watch.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Seizure Sense Watch.xctestplan"; sourceTree = "<group>"; };
 		998EC00A2F86A77F0073D362 /* Seizure Sense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seizure Sense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		998EC0492F86AB310073D362 /* Maren_View_3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Maren_View_3.entitlements; sourceTree = "<group>"; };
 		998EC04A2F86AB8E0073D362 /* Maren-View-3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Maren-View-3-Info.plist"; sourceTree = "<group>"; };
 		998EC0552F86AD360073D362 /* Seizure Sense Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seizure Sense Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		992ABC802F918DA4009BAB71 /* Exceptions for "Seizure Sense" folder in "Seizure Sense" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Seizure Sense.xcdatamodeld",
+			);
+			target = 998EC0092F86A77F0073D362 /* Seizure Sense */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		992ABC652F918752009BAB71 /* Exceptions for "Seizure Sense" folder in "Copy Bundle Resources" phase from "Seizure Sense" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 998EC0082F86A77F0073D362 /* Resources */;
+			membershipExceptions = (
+				"Seizure Sense.xcdatamodeld",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		992ABC6B2F91879D009BAB71 /* Seizure Sense Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Seizure Sense Tests";
+			sourceTree = "<group>";
+		};
+		992ABC862F9190BF009BAB71 /* Seizure Sense UI Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Seizure Sense UI Tests";
+			sourceTree = "<group>";
+		};
+		992ABC9E2F919E1A009BAB71 /* Seizure Sense Watch Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Seizure Sense Watch Tests";
+			sourceTree = "<group>";
+		};
 		998EC00B2F86A77F0073D362 /* Seizure Sense */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				992ABC802F918DA4009BAB71 /* Exceptions for "Seizure Sense" folder in "Seizure Sense" target */,
+				992ABC652F918752009BAB71 /* Exceptions for "Seizure Sense" folder in "Copy Bundle Resources" phase from "Seizure Sense" target */,
+			);
 			path = "Seizure Sense";
 			sourceTree = "<group>";
 		};
@@ -55,6 +122,27 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		992ABC672F91879D009BAB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ABC822F9190BF009BAB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ABC9A2F919E1A009BAB71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998EC0072F86A77F0073D362 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,10 +163,15 @@
 		998EBFEF2F86A7500073D362 = {
 			isa = PBXGroup;
 			children = (
+				992ABCAA2F919E77009BAB71 /* Seizure Sense Watch.xctestplan */,
+				992ABC7D2F91884D009BAB71 /* Seizure Sense.xctestplan */,
 				998EC04A2F86AB8E0073D362 /* Maren-View-3-Info.plist */,
 				998EC0492F86AB310073D362 /* Maren_View_3.entitlements */,
 				998EC00B2F86A77F0073D362 /* Seizure Sense */,
 				998EC0562F86AD360073D362 /* Seizure Sense Watch App Watch App */,
+				992ABC6B2F91879D009BAB71 /* Seizure Sense Tests */,
+				992ABC862F9190BF009BAB71 /* Seizure Sense UI Tests */,
+				992ABC9E2F919E1A009BAB71 /* Seizure Sense Watch Tests */,
 				998EBFF92F86A7500073D362 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +181,9 @@
 			children = (
 				998EC00A2F86A77F0073D362 /* Seizure Sense.app */,
 				998EC0552F86AD360073D362 /* Seizure Sense Watch App Watch App.app */,
+				992ABC6A2F91879D009BAB71 /* Seizure Sense Tests.xctest */,
+				992ABC852F9190BF009BAB71 /* Seizure Sense UI Tests.xctest */,
+				992ABC9D2F919E1A009BAB71 /* Seizure Sense Watch Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +191,75 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		992ABC692F91879D009BAB71 /* Seizure Sense Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992ABC702F91879D009BAB71 /* Build configuration list for PBXNativeTarget "Seizure Sense Tests" */;
+			buildPhases = (
+				992ABC662F91879D009BAB71 /* Sources */,
+				992ABC672F91879D009BAB71 /* Frameworks */,
+				992ABC682F91879D009BAB71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992ABC6F2F91879D009BAB71 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				992ABC6B2F91879D009BAB71 /* Seizure Sense Tests */,
+			);
+			name = "Seizure Sense Tests";
+			packageProductDependencies = (
+			);
+			productName = "Seizure Sense Tests";
+			productReference = 992ABC6A2F91879D009BAB71 /* Seizure Sense Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		992ABC842F9190BF009BAB71 /* Seizure Sense UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992ABC8D2F9190BF009BAB71 /* Build configuration list for PBXNativeTarget "Seizure Sense UI Tests" */;
+			buildPhases = (
+				992ABC812F9190BF009BAB71 /* Sources */,
+				992ABC822F9190BF009BAB71 /* Frameworks */,
+				992ABC832F9190BF009BAB71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992ABC8C2F9190BF009BAB71 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				992ABC862F9190BF009BAB71 /* Seizure Sense UI Tests */,
+			);
+			name = "Seizure Sense UI Tests";
+			packageProductDependencies = (
+			);
+			productName = "Seizure Sense UI Tests";
+			productReference = 992ABC852F9190BF009BAB71 /* Seizure Sense UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		992ABC9C2F919E1A009BAB71 /* Seizure Sense Watch Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992ABCA32F919E1A009BAB71 /* Build configuration list for PBXNativeTarget "Seizure Sense Watch Tests" */;
+			buildPhases = (
+				992ABC992F919E1A009BAB71 /* Sources */,
+				992ABC9A2F919E1A009BAB71 /* Frameworks */,
+				992ABC9B2F919E1A009BAB71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992ABCA22F919E1A009BAB71 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				992ABC9E2F919E1A009BAB71 /* Seizure Sense Watch Tests */,
+			);
+			name = "Seizure Sense Watch Tests";
+			packageProductDependencies = (
+			);
+			productName = "Seizure Sense Watch Tests";
+			productReference = 992ABC9D2F919E1A009BAB71 /* Seizure Sense Watch Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		998EC0092F86A77F0073D362 /* Seizure Sense */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 998EC0122F86A7800073D362 /* Build configuration list for PBXNativeTarget "Seizure Sense" */;
@@ -151,6 +316,20 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					992ABC692F91879D009BAB71 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 998EC0092F86A77F0073D362;
+					};
+					992ABC842F9190BF009BAB71 = {
+						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
+						TestTargetID = 998EC0092F86A77F0073D362;
+					};
+					992ABC9C2F919E1A009BAB71 = {
+						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
+						TestTargetID = 998EC0542F86AD360073D362;
+					};
 					998EC0092F86A77F0073D362 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -175,15 +354,40 @@
 			targets = (
 				998EC0092F86A77F0073D362 /* Seizure Sense */,
 				998EC0542F86AD360073D362 /* Seizure Sense Watch App Watch App */,
+				992ABC692F91879D009BAB71 /* Seizure Sense Tests */,
+				992ABC842F9190BF009BAB71 /* Seizure Sense UI Tests */,
+				992ABC9C2F919E1A009BAB71 /* Seizure Sense Watch Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		992ABC682F91879D009BAB71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ABC832F9190BF009BAB71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ABC9B2F919E1A009BAB71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998EC0082F86A77F0073D362 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992ABC7E2F91884D009BAB71 /* Seizure Sense.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,12 +395,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992ABCAC2F919E82009BAB71 /* Seizure Sense Watch.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		992ABC662F91879D009BAB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ABC812F9190BF009BAB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992ABC992F919E1A009BAB71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		998EC0062F86A77F0073D362 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +440,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		992ABC6F2F91879D009BAB71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998EC0092F86A77F0073D362 /* Seizure Sense */;
+			targetProxy = 992ABC6E2F91879D009BAB71 /* PBXContainerItemProxy */;
+		};
+		992ABC8C2F9190BF009BAB71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998EC0092F86A77F0073D362 /* Seizure Sense */;
+			targetProxy = 992ABC8B2F9190BF009BAB71 /* PBXContainerItemProxy */;
+		};
+		992ABCA22F919E1A009BAB71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 998EC0542F86AD360073D362 /* Seizure Sense Watch App Watch App */;
+			targetProxy = 992ABCA12F919E1A009BAB71 /* PBXContainerItemProxy */;
+		};
 		998EC05E2F86AD370073D362 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 998EC0542F86AD360073D362 /* Seizure Sense Watch App Watch App */;
@@ -222,6 +463,140 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		992ABC712F91879D009BAB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7V95S5867Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marenmccrossan.Seizure-Sense-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seizure Sense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Seizure Sense";
+			};
+			name = Debug;
+		};
+		992ABC722F91879D009BAB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7V95S5867Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marenmccrossan.Seizure-Sense-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seizure Sense.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Seizure Sense";
+			};
+			name = Release;
+		};
+		992ABC8E2F9190BF009BAB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7V95S5867Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marenmccrossan.Seizure-Sense-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Seizure Sense";
+			};
+			name = Debug;
+		};
+		992ABC8F2F9190BF009BAB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7V95S5867Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marenmccrossan.Seizure-Sense-UI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Seizure Sense";
+			};
+			name = Release;
+		};
+		992ABCA42F919E1A009BAB71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7V95S5867Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marenmccrossan.Seizure-Sense-Watch-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seizure Sense Watch App Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Seizure Sense Watch App Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		992ABCA52F919E1A009BAB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7V95S5867Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marenmccrossan.Seizure-Sense-Watch-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seizure Sense Watch App Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Seizure Sense Watch App Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
 		998EC0012F86A7520073D362 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -498,6 +873,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		992ABC702F91879D009BAB71 /* Build configuration list for PBXNativeTarget "Seizure Sense Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992ABC712F91879D009BAB71 /* Debug */,
+				992ABC722F91879D009BAB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992ABC8D2F9190BF009BAB71 /* Build configuration list for PBXNativeTarget "Seizure Sense UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992ABC8E2F9190BF009BAB71 /* Debug */,
+				992ABC8F2F9190BF009BAB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992ABCA32F919E1A009BAB71 /* Build configuration list for PBXNativeTarget "Seizure Sense Watch Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992ABCA42F919E1A009BAB71 /* Debug */,
+				992ABCA52F919E1A009BAB71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		998EBFF32F86A7500073D362 /* Build configuration list for PBXProject "Maren_View_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

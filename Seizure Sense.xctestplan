@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "3192021A-A206-4852-AC3C-A738B35BA5CB",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Maren_View_3.xcodeproj",
+        "identifier" : "992ABC842F9190BF009BAB71",
+        "name" : "Seizure Sense UI Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Maren_View_3.xcodeproj",
+        "identifier" : "992ABC692F91879D009BAB71",
+        "name" : "Seizure Sense Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

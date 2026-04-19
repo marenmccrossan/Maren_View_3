@@ -27,17 +27,19 @@ class IMUManager: NSObject, ObservableObject, WCSessionDelegate {
     }
 
     func startAccelerometers() {
-        guard motion.isAccelerometerAvailable else {
-            print("Accelerometer not available")
+        guard motion.isDeviceMotionAvailable else {
+            print("Device Motion not available")
             return
         }
 
-        print("Accelerometer is available!")
-        motion.accelerometerUpdateInterval = 1.0 / 60.0 // 60 Hz
+        motion.deviceMotionUpdateInterval = 1.0 / 60.0 // 60 Hz
 
-        motion.startAccelerometerUpdates(to: OperationQueue.current ?? .main) { [weak self] data, error in
+        motion.startDeviceMotionUpdates(to: .main) { [weak self] data, error in
             guard let self = self, let data = data else { return }
-            self.accel = [data.acceleration.x, data.acceleration.y, data.acceleration.z]
+            
+            //User acceleration
+            let userAccel = data.userAcceleration
+            self.accel = [userAccel.x, userAccel.y, userAccel.z]
             
             let session = WCSession.default
             if session.isReachable {

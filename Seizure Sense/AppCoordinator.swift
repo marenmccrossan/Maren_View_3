@@ -24,6 +24,7 @@ final class AppCoordinator: ObservableObject {
     // Shared services
     let contactsStore: ContactsStore
     let seizureDetector: SeizureDetector
+    let appSettings = AppSettings()
 
     // Optional: surface app-level routing or state later
     @Published var isAlertActive: Bool = false
@@ -58,8 +59,8 @@ final class AppCoordinator: ObservableObject {
     // MARK: Root View
     /// Root content view for the app. Injects environment objects so other views can access them.
     var rootView: some View {
-        ContentView()
-            .environmentObject(AppSettings())
+        ContentView(detector: seizureDetector)
+            .environmentObject(appSettings)
             .environmentObject(contactsStore)
     }
 
@@ -122,5 +123,6 @@ import Observation
     AppCoordinator().rootView
 }
 #endif
+
 
 

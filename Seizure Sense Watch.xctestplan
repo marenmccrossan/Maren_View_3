@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C832533F-01C1-4B5A-AA3D-7EF6CCF647DD",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Maren_View_3.xcodeproj",
+        "identifier" : "992ABC9C2F919E1A009BAB71",
+        "name" : "Seizure Sense Watch Tests"
+      }
+    }
+  ],
+  "version" : 1
+}

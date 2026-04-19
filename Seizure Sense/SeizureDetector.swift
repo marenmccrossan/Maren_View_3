@@ -32,10 +32,10 @@ final class SeizureDetector: ObservableObject {
     }
 
     // Motion spike threshold (g magnitude or your chosen unit)
-    var motionSpikeThreshold: Double = 0.5
+    var motionSpikeThreshold: Double = 0.8
 
     // Seizure detection requires HR and motion spikes to coincide within this window
-    var coincidenceWindow: TimeInterval = 10
+    var coincidenceWindow: TimeInterval = 20
 
     // Stabilization monitoring (end the alert when HR variance calms down)
     var stabilizationVarianceThreshold: Double = 8
@@ -46,6 +46,7 @@ final class SeizureDetector: ObservableObject {
     private var lastHRSpike: Date?
     private var lastMotionSpike: Date?
     private var lastSeizureTrigger: Date?
+    private var lastNotificationTime: Date?
 
     // HR history for baseline + stabilization
     private var points: [(date: Date, bpm: Double)] = []
@@ -59,6 +60,15 @@ final class SeizureDetector: ObservableObject {
 
     // Callback for UI layer
     var onSeizureDetected: (() -> Void)?
+    
+    // MARK: - Initializer
+    init(){
+            if ProcessInfo.processInfo.arguments.contains("-simulateSeizure") {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.triggerSeizure()
+            }
+        }
+    }
 
     // MARK: - Public APIs to feed data
     func ingestHeartRate(_ bpm: Double) {
@@ -116,7 +126,7 @@ final class SeizureDetector: ObservableObject {
     private func evaluateCombinedSpike() {
         let now = Date()
 
-        if let until = cooldownUntil, now < until { return }
+        if let until = cooldownUntil, now < until { }
 
         // We consider a combined event if we have a recent motion spike and either:
         // 1) a detected HR spike timestamp, or
@@ -136,16 +146,17 @@ final class SeizureDetector: ObservableObject {
         guard delta <= coincidenceWindow else { return }
 
         // Prevent rapid retriggers within the coincidence window
-        if let last = lastSeizureTrigger, Date().timeIntervalSince(last) < coincidenceWindow {
+        if let lastNotif = lastNotificationTime, now.timeIntervalSince(lastNotif) < 60 {
             return
         }
 
         triggerSeizure()
-        lastSeizureTrigger = Date()
+        lastSeizureTrigger = now
+        lastNotificationTime = now
     }
 
     private func triggerSeizure() {
-        guard !seizureDetected else { return }
+        //guard !seizureDetected else { return }
         DispatchQueue.main.async {
             if let until = self.cooldownUntil, Date() >= until {
                 self.cooldownUntil = nil

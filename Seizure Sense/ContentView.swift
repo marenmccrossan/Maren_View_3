@@ -20,7 +20,8 @@ struct ContentView: View {
     @State private var showSettings = false
     @Environment(\.colorScheme) private var colorScheme
     
-    @StateObject private var detector = SeizureDetector()
+    @StateObject private var detector: SeizureDetector
+    init(detector: SeizureDetector) { _detector = StateObject(wrappedValue: detector) }
     
     // MARK: - Detection State
     @State private var seizureDetected = false
@@ -175,9 +176,12 @@ struct ContentView: View {
                    }
                },
                message: {
-                   Text("We detected seizure-like motion.")
+                   Text("We detected seizure-like activity.")
                })
         .onAppear {
+            let delegate = NotificationDelegate()
+                UNUserNotificationCenter.current().delegate = delegate
+                requestNotificationAuthorization()
             requestNotificationAuthorization()
             detector.onSeizureDetected = {
                 // Present in-app alert
@@ -251,75 +255,10 @@ extension ContentView {
     */
     
     private func triggerSeizure() {
-        /*
-        guard !seizureDetected else { return }
-        seizureDetected = true
-        startFlashing()
-        startStabilizationMonitor()
-
-        // In-app popup
-        showSeizureAlert = true
-
-        // Schedule a local notification (foreground/background)
-        scheduleSeizureNotification()
-        */
+        
     }
     
-    /*
-    private func startFlashing() {
-        isFlashing = true
-        flashOpacity = 1.0
-        
-        withAnimation(.easeInOut(duration: 0.5)
-            .repeatForever(autoreverses: true)) {
-            flashOpacity = 0.4
-        }
-    }
-    */
     
-    /*
-    private func startStabilizationMonitor() {
-        stabilizationTimer?.invalidate()
-        
-        stabilizationTimer = Timer.scheduledTimer(withTimeInterval: 0.5,
-                                                  repeats: true) { _ in
-            evaluateStabilization()
-        }
-    }
-    */
-    
-    /*
-    private func evaluateStabilization() {
-        let now = Date()
-        let recent = points.filter {
-            now.timeIntervalSince($0.date) <= stabilizationSeconds
-        }
-        
-        guard recent.count >= 5 else { return }
-        
-        let values = recent.map { $0.bpm }
-        let mean = values.reduce(0,+) / Double(values.count)
-        let variance = values.map { pow($0 - mean, 2) }
-            .reduce(0,+) / Double(values.count)
-        let stddev = sqrt(variance)
-        
-        if stddev <= stabilizationVarianceThreshold {
-            stopAlert()
-        }
-    }
-    */
-    
-    /*
-    private func stopAlert() {
-        stabilizationTimer?.invalidate()
-        stabilizationTimer = nil
-        seizureDetected = false
-        isFlashing = false
-        flashOpacity = 1.0
-        lastHRSpike = nil
-        lastMotionSpike = nil
-    }
-    */
     
     private func accelValue(_ index: Int) -> Double {
         watchAccelObservable.accel.indices.contains(index)
@@ -351,8 +290,8 @@ extension ContentView {
         content.body = "We detected seizure-like activity."
         content.sound = .default
 
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        _ = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
 
         UNUserNotificationCenter.current().add(request) { error in
             if let error = error {
@@ -361,4 +300,8 @@ extension ContentView {
         }
     }
 }
-
+class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .sound]) // This shows the banner in foreground
+    }
+}
