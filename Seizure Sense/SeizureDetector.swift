@@ -32,10 +32,10 @@ final class SeizureDetector: ObservableObject {
     }
 
     // Motion spike threshold (g magnitude or your chosen unit)
-    var motionSpikeThreshold: Double = 0.8
+    var motionSpikeThreshold: Double = 1.2
 
     // Seizure detection requires HR and motion spikes to coincide within this window
-    var coincidenceWindow: TimeInterval = 20
+    var coincidenceWindow: TimeInterval = 45
 
     // Stabilization monitoring (end the alert when HR variance calms down)
     var stabilizationVarianceThreshold: Double = 8
