@@ -15,10 +15,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "998EC0542F86AD360073D362"
+               BuildableName = "Seizure Sense Watch App Watch App.app"
+               BlueprintName = "Seizure Sense Watch App Watch App"
+               ReferencedContainer = "container:Seizure Sense.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "998EC0092F86A77F0073D362"
                BuildableName = "Seizure Sense.app"
                BlueprintName = "Seizure Sense"
-               ReferencedContainer = "container:Maren_View_3.xcodeproj">
+               ReferencedContainer = "container:Seizure Sense.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,7 +60,7 @@
                BlueprintIdentifier = "992ABC692F91879D009BAB71"
                BuildableName = "Seizure Sense Tests.xctest"
                BlueprintName = "Seizure Sense Tests"
-               ReferencedContainer = "container:Maren_View_3.xcodeproj">
+               ReferencedContainer = "container:Seizure Sense.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -57,7 +71,18 @@
                BlueprintIdentifier = "992ABC842F9190BF009BAB71"
                BuildableName = "Seizure Sense UI Tests.xctest"
                BlueprintName = "Seizure Sense UI Tests"
-               ReferencedContainer = "container:Maren_View_3.xcodeproj">
+               ReferencedContainer = "container:Seizure Sense.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "992ABC9C2F919E1A009BAB71"
+               BuildableName = "Seizure Sense Watch Tests.xctest"
+               BlueprintName = "Seizure Sense Watch Tests"
+               ReferencedContainer = "container:Seizure Sense.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -76,10 +101,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "998EC0092F86A77F0073D362"
-            BuildableName = "Seizure Sense.app"
-            BlueprintName = "Seizure Sense"
-            ReferencedContainer = "container:Maren_View_3.xcodeproj">
+            BlueprintIdentifier = "998EC0542F86AD360073D362"
+            BuildableName = "Seizure Sense Watch App Watch App.app"
+            BlueprintName = "Seizure Sense Watch App Watch App"
+            ReferencedContainer = "container:Seizure Sense.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -93,10 +118,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "998EC0092F86A77F0073D362"
-            BuildableName = "Seizure Sense.app"
-            BlueprintName = "Seizure Sense"
-            ReferencedContainer = "container:Maren_View_3.xcodeproj">
+            BlueprintIdentifier = "998EC0542F86AD360073D362"
+            BuildableName = "Seizure Sense Watch App Watch App.app"
+            BlueprintName = "Seizure Sense Watch App Watch App"
+            ReferencedContainer = "container:Seizure Sense.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

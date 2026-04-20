@@ -4,6 +4,8 @@
 //
 //  Created by Maren McCrossan on 4/8/26.
 //
+
+/// Note: Future work will contain a functional Messaging capbility where users will be able to add thier trusted contacts and the app will send alerts when a seizure is detected. Messaging will utilize the AppCoordinator and ContactsStore file to effectively send messages. It will also utilize a 3rd party API messaging capability to effectively send those messages. For the app's current state, will we be omitting Messaging Vew from the Settings section.
 import SwiftUI
 
 struct MessagingView: View {

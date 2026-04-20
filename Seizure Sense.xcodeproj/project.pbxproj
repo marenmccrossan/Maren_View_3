@@ -64,8 +64,6 @@
 		992ABC9D2F919E1A009BAB71 /* Seizure Sense Watch Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Seizure Sense Watch Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		992ABCAA2F919E77009BAB71 /* Seizure Sense Watch.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Seizure Sense Watch.xctestplan"; sourceTree = "<group>"; };
 		998EC00A2F86A77F0073D362 /* Seizure Sense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seizure Sense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		998EC0492F86AB310073D362 /* Maren_View_3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Maren_View_3.entitlements; sourceTree = "<group>"; };
-		998EC04A2F86AB8E0073D362 /* Maren-View-3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Maren-View-3-Info.plist"; sourceTree = "<group>"; };
 		998EC0552F86AD360073D362 /* Seizure Sense Watch App Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Seizure Sense Watch App Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,8 +163,6 @@
 			children = (
 				992ABCAA2F919E77009BAB71 /* Seizure Sense Watch.xctestplan */,
 				992ABC7D2F91884D009BAB71 /* Seizure Sense.xctestplan */,
-				998EC04A2F86AB8E0073D362 /* Maren-View-3-Info.plist */,
-				998EC0492F86AB310073D362 /* Maren_View_3.entitlements */,
 				998EC00B2F86A77F0073D362 /* Seizure Sense */,
 				998EC0562F86AD360073D362 /* Seizure Sense Watch App Watch App */,
 				992ABC6B2F91879D009BAB71 /* Seizure Sense Tests */,
@@ -338,7 +334,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 998EBFF32F86A7500073D362 /* Build configuration list for PBXProject "Maren_View_3" */;
+			buildConfigurationList = 998EBFF32F86A7500073D362 /* Build configuration list for PBXProject "Seizure Sense" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -900,7 +896,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		998EBFF32F86A7500073D362 /* Build configuration list for PBXProject "Maren_View_3" */ = {
+		998EBFF32F86A7500073D362 /* Build configuration list for PBXProject "Seizure Sense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				998EC0012F86A7520073D362 /* Debug */,

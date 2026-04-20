@@ -67,7 +67,7 @@ struct SettingsView: View {
                         
                         // MARK: Buttons Section
                         VStack(spacing: 12 * settings.textScale) {
-                            settingsButton(title: "Messaging", icon: "message") { MessagingView() }
+                            // settingsButton(title: "Messaging", icon: "message") { MessagingView() }
                             settingsButton(title: "Threshold Settings", icon: "slider.horizontal.3") { ThresholdViewBlue() }
                             
                         }
